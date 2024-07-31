@@ -1,5 +1,7 @@
 class Cave:
     def __init__(Self, cave_name):
-        self.name = cave_name
-        self.description = none
-        
+        Self.name = cave_name
+        Self.description = None
+
+    def set_description(self, cave_description)
+        self.description = cave_description
