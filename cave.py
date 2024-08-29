@@ -44,3 +44,4 @@ class Cave:
         else:
             print("You cannot go that way")
             return self
+        

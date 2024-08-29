@@ -1,6 +1,6 @@
 """docstring"""
 from character import Enemy
-harry = Enemy("CJ", "A smelly Wumpus")
+harry = Enemy("CJ", "Blood Crip")
 harry.describe()
 harry.set_conversation("ahhh shit, here we go again")
 harry.talk()
