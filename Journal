@@ -1,0 +1,42 @@
+31/7/2024
+created the cave.py and main.py files
+created cave class
+created 3 caves and set up description
+
+2/8/2024
+created setter and getter methods for al cave attributes
+
+5/8/2024
+added cave directions and description
+
+7/8/2024
+implemented a method for moving between cave objects
+created character.py file and tested its functionality
+created character class
+
+9/8/2024
+created Enemy subclass in Character
+Created weakness attribute and set  item_weakness
+implemented  method for fighting the CJ
+Made the CJ weak to something
+Tested Enemy subclass and weakness attribute/fighting method
+
+12/8/2024
+finished working on the character_test file and started integrated code into main.py
+added a way to associate a character with a cave (put harry into dungeon) using setter and getter methods
+
+19/8/2024
+added dosctrings
+wrote some code for the inventory for friendly
+wrote code for the item movement
+did some error handling and spaced out main for readability
+
+21/8/2024
+need to fix inventory
+need to fix restricted access and grant permission
+
+23/8/2024
+fixed inventory, worked on permission but was unable to solve issue
+
+27/8/2024
+only want the game to end when CJ is beaten
