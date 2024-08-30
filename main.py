@@ -1,21 +1,30 @@
 from cave import Cave
 from character import Enemy
 
-cavern = Cave("Cavern")
-grotto = Cave("Grotto")
-dungeon = Cave("Dungeon")
+cavern = Cave("Jamaican embassy")
+grotto = Cave("Rasta palace")
+dungeon = Cave("Skate park")
+Street = Cave("Grove Street")
+Learningcenter = Cave("Learning Center")
+Jail = Cave("Jail")
 
-cavern.set_description("A damp and dirty cave.")
-grotto.set_description("A small cave with ancient markings.")
-dungeon.set_description("A large cave with a rack.")
+cavern.set_description("si bomboclatt.")
+grotto.set_description("Ya smell dat?.")
+dungeon.set_description("Bredda is dat CJ?")
+Street.set_description("Dis Da CJ home ya feel")
+Learningcenter.set_description("Ay man Leave Da kid Be ah?")
+Jail = Cave("bredda why u come here?")
 
-cavern.link_cave("south", dungeon)
-dungeon.link_cave("north", cavern)
-dungeon.link_cave("west", grotto)
-grotto.link_cave("east", dungeon)
+cavern.link_cave("south", grotto)
+grotto.link_cave("west", cavern)
+cavern.link_cave("east", Street)
+Street.link_cave("south", cavern)
+Street.link_cave("east",Learningcenter)
+Learningcenter.link_cave("north", dungeon)
+Jail.link_cave("west", Street)
 
 harry = Enemy("CJ", "Blood Crip")
-harry.set_conversation("Come closer. I can't see you!")
+harry.set_conversation("Wah Gwaan me na see ya in donkey years!")
 harry.set_weakness("vegemite")
 dungeon.set_character(harry)
 
@@ -36,10 +45,10 @@ while dead is False:
     elif command == "fight":
         if inhabitant is not None and isinstance(inhabitant, Enemy):
             print("Bomboclatt Bredrin yu win di fight")
+            print("Thats the end of the game")
             current_cave.set_character(None)
         else:
             print("Lata yuh Donkey, Cum Latah")
-            print("Thats the end of the game")
             dead = True
     else:
         print("There de nuhwan yah tuh fight wid")
